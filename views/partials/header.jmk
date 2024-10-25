@@ -1,0 +1,31 @@
+<header class="bg-gray-800 p-4 shadow-md fixed w-full z-10 transition-all duration-300 ease-in-out" id="header">
+    <div class="container mx-auto flex justify-between items-center border-b-2 border-gray-600">
+        <div class="flex items-center">
+            <img src="/images/logo.jpg" alt="Logo" class="w-8 h-8 rounded-full mr-2">
+            <h1 class="text-white text-2xl font-bold transition-transform transform hover:scale-105">AETHER Hosting</h1>
+        </div>
+        <button id="navbar-toggle" class="text-white md:hidden focus:outline-none transition-transform transform hover:scale-110">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <nav id="navbar" class="hidden md:flex md:items-center">
+            <ul class="flex space-x-4">
+                <li><a href="/" class="text-white hover:text-gray-400 transition duration-300 transform hover:scale-110">Home</a></li>
+                <li><a href="/about" class="text-white hover:text-gray-400 transition duration-300 transform hover:scale-110">About</a></li>
+                <li><a href="/docs" class="text-white hover:text-gray-400 transition duration-300 transform hover:scale-110 border-b-2 border-white">API</a></li>
+                <li><a href="/contact" class="text-white hover:text-gray-400 transition duration-300 transform hover:scale-110">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 ease-in-out">
+        <ul class="flex flex-col mt-2 space-y-2">
+            <li><a href="/" class="block text-white hover:text-gray-400 transition duration-300">Home</a></li>
+            <li><a href="/about" class="block text-white hover:text-gray-400 transition duration-300">About</a></li>
+            <li><a href="/docs" class="block text-white hover:text-gray-400 transition duration-300">API</a></li>
+            <li><a href="/contact" class="block text-white hover:text-gray-400 transition duration-300">Contact</a></li>
+        </ul>
+    </div>
+</header>
