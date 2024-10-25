@@ -23,6 +23,8 @@ By participating in this project, you are expected to uphold our Code of Conduct
 2. Clone your fork locally:
    ```
    git clone https://github.com/aetherzcode/AETHER-CDN.git
+   ```
+   ```
    cd AETHER-CDN
    ```
 3. Install dependencies:
