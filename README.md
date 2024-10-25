@@ -21,15 +21,18 @@ AETHER CDN is a free source code for uploading files such as images, videos, and
 1. Clone this repository and go to directory:
 ```bash
 git clone https://github.com/aetherzcode/AETHER-CDN
+```
+
+```
 cd AETHER-CDN
 ```
 
-4. Install dependencies:
+2. Install dependencies:
 ```bash 
 npm install
 ```
 
-5. Build:
+3. Build:
 ```bash 
 npm run build 
 ```

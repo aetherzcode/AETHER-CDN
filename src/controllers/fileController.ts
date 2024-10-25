@@ -73,7 +73,7 @@ export const apiUpload = (req: Request, res: Response) => {
 
   res.json({
     status: 200,
-    creator: "Arifzyn.",
+    creator: "AETHER.",
     data: {
       originalname: req.file.originalname,
       filename: req.file.filename,
