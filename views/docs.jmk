@@ -1,6 +1,6 @@
 <header class="bg-gray-800 py-4 shadow-lg">
   <div class="container mx-auto px-4">
-    <h1 class="text-3xl font-bold text-blue-400">AETHER Hosting API Documentation</h1>
+    <h1 class="text-3xl font-bold text-blue-400">AETHER - CDN API Documentation</h1>
   </div>
 </header>
 
@@ -8,7 +8,7 @@
   <!-- Introduction -->
   <section id="introduction" class="mb-8">
     <h2 class="text-2xl font-semibold text-blue-300">Introduction</h2>
-    <p class="text-gray-300">Welcome to the AETHER Hosting API documentation. This API allows you to upload files and interact with our hosting platform.</p>
+    <p class="text-gray-300">Welcome to the AETHER - CDN API documentation. This API allows you to upload files and interact with our hosting platform.</p>
   </section>
 
   <!-- Dropdown for Language Selection -->

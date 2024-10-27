@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import multer from "multer";
 import path from "path";
 import fs from "fs";
+import { sendEmail } from '../services/emailService';
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -26,19 +27,19 @@ const upload = multer({
 export const uploadFile = upload.single("file");
 
 export const getHome = (req: Request, res: Response) => {
-  res.render("index", { title: "Home | AETHER CDN" });
+  res.render("index", { title: "Home | AETHER - CDN" });
 };
 
 export const getAbout = (req: Request, res: Response) => {
-  res.render("about", { title: "About | AETHER CDN" });
+  res.render("about", { title: "About | AETHER - CDN" });
 };
 
 export const getContact = (req: Request, res: Response) => {
-  res.render("contact", { title: "Contact | AETHER CDN" });
+  res.render("contact", { title: "Contact | AETHER - CDN" });
 };
 
 export const getDocs = (req: Request, res: Response) => {
-  res.render("docs", { title: "Docs | AETHER CDN" });
+  res.render("docs", { title: "Docs | AETHER - CDN" });
 };
 
 export const handleUpload = (req: Request, res: Response) => {
@@ -55,7 +56,7 @@ export const getData = (req: Request, res: Response) => {
 
   if (fs.existsSync(filePath)) {
     res.render("result", {
-      title: "File Result | AETHER CDN",
+      title: "File Result | AETHER - CDN",
       fileUrl: `${req.protocol}://${req.get("host")}/f/${filename}`,
       filename,
     });
@@ -83,3 +84,19 @@ export const apiUpload = (req: Request, res: Response) => {
     },
   });
 }; 
+
+export const handleContactForm = async (req: Request, res: Response) => {
+  const { name, email, message } = req.body;
+
+  try {
+    const emailSent = await sendEmail(name, email, message);
+    if (emailSent) {
+      res.status(200).json({ message: 'Message sent successfully' });
+    } else {
+      res.status(500).json({ error: 'Failed to send message' });
+    }
+  } catch (error) {
+    console.error('Error in handleContactForm:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+};

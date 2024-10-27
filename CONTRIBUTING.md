@@ -1,6 +1,6 @@
-# Contributing to AETHER CDN
+# Contributing to AETHER - CDN
 
-We're thrilled that you're interested in contributing to AETHER CDN! This document provides guidelines for contributing to the project. Please take a moment to review this information to ensure a smooth contribution process.
+We're thrilled that you're interested in contributing to AETHER - CDN! This document provides guidelines for contributing to the project. Please take a moment to review this information to ensure a smooth contribution process.
 
 ## Table of Contents
 
@@ -44,7 +44,7 @@ By participating in this project, you are expected to uphold our Code of Conduct
 4. Run the test suite and ensure that all tests pass.
 5. Commit your changes (see [Commit Messages](#commit-messages)).
 6. Push your branch to your fork on GitHub.
-7. Create a pull request from your branch to the main AETHER CDN repository.
+7. Create a pull request from your branch to the main AETHER - CDN repository.
 
 ## Coding Standards
 
@@ -84,7 +84,7 @@ When suggesting enhancements, please include:
 - A clear and descriptive title for the issue
 - A step-by-step description of the suggested enhancement
 - Any potential alternatives you've considered
-- Notes on why this enhancement would be useful to most AETHER CDN users
+- Notes on why this enhancement would be useful to most AETHER - CDN users
 
-Thank you for contributing to AETHER CDN!
+Thank you for contributing to AETHER - CDN!
 

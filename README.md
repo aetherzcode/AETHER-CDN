@@ -4,18 +4,18 @@
     <img src="/public/images/logo.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 
-<h1 align="center">AETHER CDN - Host File</h1>
+<h1 align="center">AETHER - CDN - Host File</h1>
 
 <p align="center">
 <a href="https://github.com/aetherzcode"><img title="Author" src="https://img.shields.io/badge/AUTHOR-aetherzcode-green.svg?style=for-the-badge&logo=github"></a>
 
 ### AETHER-CDN
 
-AETHER CDN is a robust and flexible file upload service designed for handling various types of files, including images, videos, and audio. Built using TypeScript, this project emphasizes a clean directory structure and ease of use. With simple installation steps and a development server setup, users can quickly integrate file uploading functionality into their applications. The project also encourages community contributions, making it a collaborative effort to enhance and expand its capabilities.
+AETHER - CDN is a robust and flexible file upload service designed for handling various types of files, including images, videos, and audio. Built using TypeScript, this project emphasizes a clean directory structure and ease of use. With simple installation steps and a development server setup, users can quickly integrate file uploading functionality into their applications. The project also encourages community contributions, making it a collaborative effort to enhance and expand its capabilities.
 
 ## AETHER - CDN
 
-AETHER CDN is a free source code for uploading files such as images, videos, and audio.
+AETHER - CDN is a free source code for uploading files such as images, videos, and audio.
 
 # Installation
 1. Clone this repository and go to directory:

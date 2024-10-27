@@ -8,21 +8,21 @@
   <title>{{ title }}</title>
 
   <!-- Meta Content -->
-  <meta name="description" content="Upload and manage your files easily with AETHER Hosting. Enjoy a seamless file management experience.">
-  <meta name="keywords" content="file upload, AETHER Hosting, AETHER CDN, cloud storage, file management, online file storage, secure file upload">
+  <meta name="description" content="Upload and manage your files easily with AETHER - CDN. Enjoy a seamless file management experience.">
+  <meta name="keywords" content="file upload, AETHER - CDN, AETHER - CDN, cloud storage, file management, online file storage, secure file upload">
   <meta name="author" content="AETHER">
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="File Upload - AETHER Hosting">
-  <meta property="og:description" content="Upload and manage your files easily with AETHER Hosting.">
+  <meta property="og:title" content="File Upload - AETHER - CDN">
+  <meta property="og:description" content="Upload and manage your files easily with AETHER - CDN.">
   <meta property="og:image" content="/images/logo.jpg"> <!-- Replace with your actual OG image URL -->
   <meta property="og:url" content="https://cdn.aetherzx.xyz">
   <meta property="og:type" content="website">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="File Upload - AETHER Hosting">
-  <meta name="twitter:description" content="Upload and manage your files easily with AETHER Hosting.">
+  <meta name="twitter:title" content="File Upload - AETHER - CDN">
+  <meta name="twitter:description" content="Upload and manage your files easily with AETHER - CDN.">
   <meta name="twitter:image" content="/images/logo.jpg">
 
   <!-- Favicon and Icons -->
