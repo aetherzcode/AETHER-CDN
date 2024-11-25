@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/contacts" class="group relative text-gray-300 hover:text-white py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white/10">
+                    <a href="/contact" class="group relative text-gray-300 hover:text-white py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white/10">
                         Contacts
                         <span class="absolute inset-x-0 bottom-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                     </a>
@@ -60,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="/contacts" class="block text-gray-300 hover:text-white hover:bg-white/10 p-3 rounded-lg transition-all duration-300">
+                <a href="/contact" class="block text-gray-300 hover:text-white hover:bg-white/10 p-3 rounded-lg transition-all duration-300">
                     Contacts
                 </a>
             </li>

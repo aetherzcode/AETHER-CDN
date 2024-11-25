@@ -2,6 +2,13 @@
     <h1 class="text-3xl font-bold text-white-800 mb-4">Contact Us</h1>
     <p class="text-white-600 mb-4">We would love to hear from you! Please fill out the form below to get in touch with us.</p>
 
+    {{#if (eq ../query.success "true")}}
+        <div class="bg-green-200 text-green-800 p-2 rounded mb-4">Message sent successfully!</div>
+    {{/if}}
+    {{#if (eq ../query.error "true")}}
+        <div class="bg-red-200 text-red-800 p-2 rounded mb-4">Failed to send message. Please try again.</div>
+    {{/if}}
+
     <form action="/send-message" method="POST" class="bg-gray-100 p-6 rounded-lg shadow-md max-w-lg mx-auto">
         <div class="mb-4">
             <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>

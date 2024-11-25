@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import multer from "multer";
 import path from "path";
 import fs from "fs";
+import nodemailer from 'nodemailer';
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -82,4 +83,32 @@ export const apiUpload = (req: Request, res: Response) => {
       url: `${protocol}://${req.get("host")}/f/${req.file.filename}`,
     },
   });
+};
+
+export const sendEmail = async (req: Request, res: Response) => {
+    const { name, email, message } = req.body;
+
+    // Konfigurasi transporter Nodemailer
+    const transporter = nodemailer.createTransport({
+        service: 'gmail', // Ganti dengan layanan email yang Anda gunakan
+        auth: {
+            user: 'aetherscode@gmail.com', // Ganti dengan email Anda
+            pass: 'ihsynmfecsxgzmfr', // Ganti dengan password email Anda
+        },
+    });
+
+    const mailOptions = {
+        from: email,
+        to: 'princeaether04', // Ganti dengan email tujuan
+        subject: `New message from ${name}`,
+        text: message,
+    };
+
+    try {
+        await transporter.sendMail(mailOptions);
+        res.redirect('/contact?success=true'); // Redirect dengan query parameter
+    } catch (error) {
+        console.error('Error sending email:', error);
+        res.redirect('/contact?error=true'); // Redirect dengan query parameter
+    }
 };
