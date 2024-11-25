@@ -99,7 +99,7 @@ export const sendEmail = async (req: Request, res: Response) => {
 
     const mailOptions = {
         from: email,
-        to: 'princeaether04', // Ganti dengan email tujuan
+        to: 'princeaether04@gmail.com', // Ganti dengan email tujuan
         subject: `New message from ${name}`,
         text: message,
     };
