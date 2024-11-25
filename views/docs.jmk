@@ -129,11 +129,11 @@ print(response.text)</code></pre>
   "status": 200,
   "creator": "AETHER.",
   "data": {
-    "originalname": "1728182170206.jpg",
-    "filename": "kr5ojad2.jpg",
+    "originalname": "OIG2.jpeg",
+    "filename": "uvpxrk8o.jpeg",
     "mimetype": "image/jpeg",
     "size": 25336,
-    "url": "https://cdn.aetherzx.xyz/f/kr5ojad2.jpg"
+    "url": "https://cdn.aetherzx.xyz/f/uvpxrk8o.jpeg"
   }
 }</code></pre>
         <button class="copy-btn" onclick="copyToClipboard('#response-code')">
