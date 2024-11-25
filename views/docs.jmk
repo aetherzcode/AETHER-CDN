@@ -61,7 +61,7 @@
                 
                 {{!-- CURL Example --}}
                 <div id="code-block-curl" class="code-block mt-4">
-                    <pre><code class="language-bash">curl -X POST https://cdn.aetherz.xyz/api/upload \
+                    <pre><code class="language-bash">curl -X POST https://aether-cdn.onrender.com/api/upload \
   -F "file=@/path/to/your/file.png"</code></pre>
                     <button class="copy-btn" onclick="copyToClipboard(this)">
                         <i class="fas fa-copy"></i> Copy Code
@@ -78,7 +78,7 @@ const form = new FormData();
 const filePath = '/path/to/your/file.png';
 form.append("file", fs.createReadStream(filePath));
 
-fetch('https://cdn.aetherz.xyz/api/upload', {
+fetch('https://aether-cdn.onrender.com/api/upload', {
   method: 'POST',
   body: form,
   headers: form.getHeaders()
@@ -101,7 +101,7 @@ const formData = new FormData();
 const filePath = '/path/to/your/file.png';
 formData.append("file", fs.createReadStream(filePath));
 
-axios.post('https://cdn.aetherz.xyz/api/upload', formData, {
+axios.post('https://aether-cdn.onrender.com/api/upload', formData, {
   headers: {
     ...formData.getHeaders(),
   },
@@ -121,7 +121,7 @@ axios.post('https://cdn.aetherz.xyz/api/upload', formData, {
                 <div id="code-block-python" class="code-block mt-4 hidden">
                     <pre><code class="language-python">import requests
 
-url = 'https://cdn.aetherz.xyz/api/upload'
+url = 'https://aether-cdn.onrender.com/api/upload'
 files = {'file': open('/path/to/your/file.png', 'rb')}
 
 response = requests.post(url, files=files)
@@ -144,7 +144,7 @@ print(response.text)</code></pre>
     "filename": "kr5ojad2.jpg",
     "mimetype": "image/jpeg",
     "size": 25336,
-    "url": "https://cdn.aetherz.xyz/f/kr5ojad2.jpg"
+    "url": "https://aether-cdn.onrender.com/f/kr5ojad2.jpg"
   }
 }</code></pre>
                     <button class="copy-btn" onclick="copyToClipboard(this)">

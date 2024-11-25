@@ -16,7 +16,7 @@
   <meta property="og:title" content="File Upload - AETHER Hosting">
   <meta property="og:description" content="Upload and manage your files easily with AETHER Hosting.">
   <meta property="og:image" content="/images/logo.jpg"> <!-- Replace with your actual OG image URL -->
-  <meta property="og:url" content="https://cdn.aetherz.xyz">
+  <meta property="og:url" content="https://aether-cdn.onrender.com">
   <meta property="og:type" content="website">
 
   <!-- Twitter Meta Tags -->
