@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <!-- Menggunakan favicon.ico untuk semua ukuran logo -->
+            <square70x70logo src="/favicon.ico"/>
+            <square150x150logo src="/favicon.ico"/>
+            <square310x310logo src="/favicon.ico"/>
+            <TileColor>#ffffff</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

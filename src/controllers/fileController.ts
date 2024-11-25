@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import multer from "multer";
 import path from "path";
 import fs from "fs";
-import { sendEmail } from '../services/emailService';
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -21,7 +20,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({
   storage,
-  limits: { fileSize: 10 * 1024 * 1024 },
+  limits: { fileSize: 50 * 1024 * 1024 },
 });
 
 export const uploadFile = upload.single("file");
@@ -56,13 +55,13 @@ export const getData = (req: Request, res: Response) => {
 
   if (fs.existsSync(filePath)) {
     res.render("result", {
-      title: "File Result | AETHER - CDN",
+      title: "File Result | AETHER CDN",
       fileUrl: `${req.protocol}://${req.get("host")}/f/${filename}`,
       filename,
     });
   } else {
     res.status(404).send("File not found");
-  };
+  }
 };
 
 export const apiUpload = (req: Request, res: Response) => {
@@ -70,7 +69,7 @@ export const apiUpload = (req: Request, res: Response) => {
     return res.status(400).json({ error: "No file uploaded" });
   }
 
-  const protocol = req.headers['x-forwarded-proto'] || req.protocol;
+  const protocol = req.headers["x-forwarded-proto"] || req.protocol;
 
   res.json({
     status: 200,
@@ -83,20 +82,4 @@ export const apiUpload = (req: Request, res: Response) => {
       url: `${protocol}://${req.get("host")}/f/${req.file.filename}`,
     },
   });
-}; 
-
-export const handleContactForm = async (req: Request, res: Response) => {
-  const { name, email, message } = req.body;
-
-  try {
-    const emailSent = await sendEmail(name, email, message);
-    if (emailSent) {
-      res.status(200).json({ message: 'Message sent successfully' });
-    } else {
-      res.status(500).json({ error: 'Failed to send message' });
-    }
-  } catch (error) {
-    console.error('Error in handleContactForm:', error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
 };

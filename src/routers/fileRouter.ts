@@ -8,7 +8,6 @@ import {
   handleUpload,
   getData,
   apiUpload,
-  handleContactForm,
 } from "../controllers/fileController";
 
 const router = Router();
@@ -20,6 +19,5 @@ router.get("/docs", getDocs);
 router.post("/upload", uploadFile, handleUpload);
 router.get("/data/:filename", getData);
 router.post("/api/upload", uploadFile, apiUpload);
-router.post("/send-message", handleContactForm);
 
 export default router;
