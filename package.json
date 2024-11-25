@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "@preline/file-upload": "^2.5.0",
+    "axios": "^1.7.7",
     "cors": "^2.8.5",
     "dropify": "^0.2.2",
     "dropzone": "^6.0.0-beta.2",
@@ -30,6 +31,7 @@
     "@types/morgan": "^1.9.9",
     "@types/multer": "^1.4.12",
     "@types/node": "^22.5.5",
+    "@types/nodemailer": "^6.4.17",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
